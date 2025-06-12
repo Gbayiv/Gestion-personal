@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Gestión de Personal</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Menú principal -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Empresa Construcción</a>
@@ -26,28 +24,35 @@
         </div>
     </nav>
 
-    <!-- Sección principal -->
-    <header class="container text-center mt-4">
-        <h1>Bienvenido a la Gestión de Personal</h1>
-        <p>Esta plataforma facilita la administración de empleados en la empresa de construcción.</p>
-    </header>
+    <main class="container my-5">
+        <header class="text-center bg-primary text-white py-5 rounded-3 mb-5">
+            <h1 class="display-4">Bienvenido a la Gestión de Personal</h1>
+            <p class="lead">Esta plataforma facilita la administración de empleados en la empresa de construcción.</p>
+        </header>
 
-    <!-- Secciones de información -->
-    <section class="container mt-4">
-        <div class="row">
+        <section class="row g-4">
             <div class="col-md-6">
-                <h2>Administración de Usuarios</h2>
-                <p>Registra, edita y elimina empleados fácilmente.</p>
-                <a href="usuarios.html" class="btn btn-primary">Ver Usuarios</a>
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Administración de Usuarios</h2>
+                        <p class="card-text">Registra, edita y elimina empleados fácilmente.</p>
+                        <a href="usuarios.html" class="btn btn-primary">Ver Usuarios</a>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
-                <h2>Contacto</h2>
-                <p>¿Necesitas ayuda? Contáctanos para asistencia.</p>
-                <a href="contacto.html" class="btn btn-secondary">Ir a Contacto</a>
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Contacto</h2>
+                        <p class="card-text">¿Necesitas ayuda? Contáctanos para asistencia.</p>
+                        <a href="contacto.html" class="btn btn-secondary">Ir a Contacto</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <script src="script.js"></script>
+        </section>
+    </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

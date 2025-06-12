@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios - Gestión de Personal</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Menú principal -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Empresa Construcción</a>
@@ -25,48 +23,38 @@
             </div>
         </div>
     </nav>
-    <!-- Formulario de usuario -->
-    <section class="container mt-4">
-        <div id="userList"></div>
-        <h2>Agregar Usuario</h2>
-        <form id="userForm">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" required>
-            </div>
-            <div class="mb-3">
-                <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" id="fechaNacimiento" required>
-            </div>
-            <div class="mb-3">
-                <label for="correo" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="correo" required>
-            </div>
-            <div class="mb-3">
-                <label for="cargo" class="form-label">Cargo</label>
-                <input type="text" class="form-control" id="cargo" required>
-            </div>
-            <div class="mb-3">
-                <label for="fechaIngreso" class="form-label">Fecha de Ingreso</label>
-                <input type="date" class="form-control" id="fechaIngreso" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Agregar Usuario</button>
-        </form>
-    </section>
-    <!-- Listado de usuarios -->
-    <section class="container mt-4">
-        <h2>Listado de Usuarios</h2>
-        <div class="row" id="userList">
-            <!-- Aquí se agregarán dinámicamente los usuarios con JavaScript -->
-        </div>
-    </section>
 
+    <div class="container mt-4">
+        <section class="mb-5">
+            <h2>Agregar Usuario</h2>
+            <form id="userForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cargo" class="form-label">Cargo</label>
+                    <input type="text" class="form-control" id="cargo" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+            </form>
+        </section>
 
+        <section>
+            <h2>Listado de Usuarios</h2>
+            <div class="row" id="userList"></div>
+        </section>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/usuarios.js"></script>
 </body>
 </html>
