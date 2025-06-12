@@ -5,24 +5,49 @@ body {
     padding-bottom: 2rem;
 }
 
-/* Mejoras en las tarjetas */
-.card {
-    transition: transform 0.2s;
-    border: none;
+/* Estilos para la lista de usuarios */
+#userList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.user-card {
+    background: white;
+    border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.user-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.card-footer {
+.user-card .card-body {
+    padding: 1.5rem;
+}
+
+.user-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.user-card .card-text {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.user-card .card-footer {
+    background-color: rgba(0,0,0,0.03);
     border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 1rem 1.5rem;
 }
 
-/* Formularios */
-form {
+/* Formulario */
+#userForm {
     background: white;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -39,7 +64,15 @@ form {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Estilos específicos para la página de inicio */
-header {
-    background: linear-gradient(135deg, #007bff, #00bfff);
+/* Títulos */
+h1, h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #userList {
+        grid-template-columns: 1fr;
+    }
 }

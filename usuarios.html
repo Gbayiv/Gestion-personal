@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <!-- Menú principal -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Empresa Construcción</a>
@@ -24,10 +26,20 @@
         </div>
     </nav>
 
+    <!-- Contenido principal -->
     <div class="container mt-4">
+        <!-- Listado de usuarios primero -->
         <section class="mb-5">
-            <h2>Agregar Usuario</h2>
-            <form id="userForm">
+            <h1 class="mb-4">Listado de Usuarios</h1>
+            <div class="row g-4" id="userList">
+                <!-- Los usuarios se cargarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Formulario de usuario después -->
+        <section>
+            <h2 class="mb-4">Agregar Nuevo Usuario</h2>
+            <form id="userForm" class="bg-white p-4 rounded shadow-sm">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombre" required>
@@ -44,13 +56,8 @@
                     <label for="cargo" class="form-label">Cargo</label>
                     <input type="text" class="form-control" id="cargo" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+                <button type="submit" class="btn btn-primary w-100">Agregar Usuario</button>
             </form>
-        </section>
-
-        <section>
-            <h2>Listado de Usuarios</h2>
-            <div class="row" id="userList"></div>
         </section>
     </div>
 
